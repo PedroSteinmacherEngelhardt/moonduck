@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdmo7ruaw50aa"]
+
+[ext_resource type="PackedScene" uid="uid://6ja4ysq4ni0v" path="res://player.tscn" id="1_53hen"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5vhl"]
+albedo_color = Color(0.223529, 0.478431, 0.133333, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qo0wj"]
+material = SubResource("StandardMaterial3D_f5vhl")
+size = Vector2(20, 10000)
+
+[sub_resource type="BoxMesh" id="BoxMesh_llpra"]
+size = Vector3(1, 2, 1)
+
+[node name="fligth_test" type="Node3D"]
+
+[node name="player" parent="." instance=ExtResource("1_53hen")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.441128, 0)
+mesh = SubResource("PlaneMesh_qo0wj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 100, 0)
+
+[node name="pillars" type="Node3D" parent="."]
+
+[node name="pillar" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.51579, 0.565099, -3.73663)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar2" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27354, 0.565099, -6.98783)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar9" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99451, 0.565099, -3.05442)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar3" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.17984, 0.565099, -16.1414)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar8" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.38609, 0.5651, -16.1399)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar4" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50427, 0.565099, -12.2705)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar5" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27354, 0.565099, -17.0344)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar6" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27354, 0.565099, -12.6346)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
+
+[node name="pillar7" type="MeshInstance3D" parent="pillars"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.39822, 0.565099, -9.71192)
+mesh = SubResource("BoxMesh_llpra")
+skeleton = NodePath("../..")
