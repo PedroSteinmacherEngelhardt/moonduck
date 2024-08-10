@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://siqmgut7pcwc"
+path="res://.godot/imported/platform-fortified.obj-e3a0696fd204daf1d85d5fcf891aec7f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform-fortified.obj-e3a0696fd204daf1d85d5fcf891aec7f.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/platform-fortified.obj"
+dest_files=["res://.godot/imported/platform-fortified.obj-e3a0696fd204daf1d85d5fcf891aec7f.mesh", "res://.godot/imported/platform-fortified.obj-e3a0696fd204daf1d85d5fcf891aec7f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

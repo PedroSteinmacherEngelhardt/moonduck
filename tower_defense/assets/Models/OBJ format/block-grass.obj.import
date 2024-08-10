@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkhmd4pu4b81p"
+path="res://.godot/imported/block-grass.obj-6b2b7baf49f22b456fcd8a0d10831928.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass.obj-6b2b7baf49f22b456fcd8a0d10831928.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-grass.obj"
+dest_files=["res://.godot/imported/block-grass.obj-6b2b7baf49f22b456fcd8a0d10831928.mesh", "res://.godot/imported/block-grass.obj-6b2b7baf49f22b456fcd8a0d10831928.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

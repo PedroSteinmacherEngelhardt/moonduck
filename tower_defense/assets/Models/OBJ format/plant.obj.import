@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d4mh2ityijnu0"
+path="res://.godot/imported/plant.obj-59bb629805b8f26e66ee1cd8bc229065.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plant.obj-59bb629805b8f26e66ee1cd8bc229065.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/plant.obj"
+dest_files=["res://.godot/imported/plant.obj-59bb629805b8f26e66ee1cd8bc229065.mesh", "res://.godot/imported/plant.obj-59bb629805b8f26e66ee1cd8bc229065.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

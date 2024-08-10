@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dw3ssndg236jg"
+path="res://.godot/imported/block-moving-large.obj-6fd08e5bedd16cf23f33b70f1c38fe50.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-moving-large.obj-6fd08e5bedd16cf23f33b70f1c38fe50.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-moving-large.obj"
+dest_files=["res://.godot/imported/block-moving-large.obj-6fd08e5bedd16cf23f33b70f1c38fe50.mesh", "res://.godot/imported/block-moving-large.obj-6fd08e5bedd16cf23f33b70f1c38fe50.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

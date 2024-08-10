@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxvte1b1g24th"
+path="res://.godot/imported/block-grass-overhang-edge.obj-19548d0d7afa5f731f46ccc47ea59085.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-overhang-edge.obj-19548d0d7afa5f731f46ccc47ea59085.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-grass-overhang-edge.obj"
+dest_files=["res://.godot/imported/block-grass-overhang-edge.obj-19548d0d7afa5f731f46ccc47ea59085.mesh", "res://.godot/imported/block-grass-overhang-edge.obj-19548d0d7afa5f731f46ccc47ea59085.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

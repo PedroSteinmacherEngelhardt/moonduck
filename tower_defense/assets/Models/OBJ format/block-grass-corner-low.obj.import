@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ccx7m56cyalfd"
+path="res://.godot/imported/block-grass-corner-low.obj-af7695319c6820f5271e91f2d970a330.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-corner-low.obj-af7695319c6820f5271e91f2d970a330.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-grass-corner-low.obj"
+dest_files=["res://.godot/imported/block-grass-corner-low.obj-af7695319c6820f5271e91f2d970a330.mesh", "res://.godot/imported/block-grass-corner-low.obj-af7695319c6820f5271e91f2d970a330.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

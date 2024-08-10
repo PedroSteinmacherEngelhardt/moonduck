@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clr3w4ou8cmr1"
+path="res://.godot/imported/block-snow-low-long.obj-4fcb89a92c34c282d2493d28556ad582.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow-low-long.obj-4fcb89a92c34c282d2493d28556ad582.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-snow-low-long.obj"
+dest_files=["res://.godot/imported/block-snow-low-long.obj-4fcb89a92c34c282d2493d28556ad582.mesh", "res://.godot/imported/block-snow-low-long.obj-4fcb89a92c34c282d2493d28556ad582.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yapdf3f50i04"
+path="res://.godot/imported/block-snow-curve-half.obj-5c0d71b93b0cbbdda55c5f11b67b14e3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow-curve-half.obj-5c0d71b93b0cbbdda55c5f11b67b14e3.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-snow-curve-half.obj"
+dest_files=["res://.godot/imported/block-snow-curve-half.obj-5c0d71b93b0cbbdda55c5f11b67b14e3.mesh", "res://.godot/imported/block-snow-curve-half.obj-5c0d71b93b0cbbdda55c5f11b67b14e3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

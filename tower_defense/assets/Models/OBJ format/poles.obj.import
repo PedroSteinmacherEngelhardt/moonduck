@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkq4a00c6eyt3"
+path="res://.godot/imported/poles.obj-a6c9b1474adafb666bf55e28d3725f09.mesh"
+
+[deps]
+
+files=["res://.godot/imported/poles.obj-a6c9b1474adafb666bf55e28d3725f09.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/poles.obj"
+dest_files=["res://.godot/imported/poles.obj-a6c9b1474adafb666bf55e28d3725f09.mesh", "res://.godot/imported/poles.obj-a6c9b1474adafb666bf55e28d3725f09.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

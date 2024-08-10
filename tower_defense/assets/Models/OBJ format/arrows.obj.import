@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7g4orcxkuxac"
+path="res://.godot/imported/arrows.obj-ff699c73916909b8694cde04d9a0ca13.mesh"
+
+[deps]
+
+files=["res://.godot/imported/arrows.obj-ff699c73916909b8694cde04d9a0ca13.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/arrows.obj"
+dest_files=["res://.godot/imported/arrows.obj-ff699c73916909b8694cde04d9a0ca13.mesh", "res://.godot/imported/arrows.obj-ff699c73916909b8694cde04d9a0ca13.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

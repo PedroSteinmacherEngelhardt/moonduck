@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csrtbl333cr3n"
+path="res://.godot/imported/block-snow-narrow.obj-9a4f507710c34edf95660322dbf4a9cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow-narrow.obj-9a4f507710c34edf95660322dbf4a9cc.mesh"]
+
+source_file="res://tower_defense/assets/Models/OBJ format/block-snow-narrow.obj"
+dest_files=["res://.godot/imported/block-snow-narrow.obj-9a4f507710c34edf95660322dbf4a9cc.mesh", "res://.godot/imported/block-snow-narrow.obj-9a4f507710c34edf95660322dbf4a9cc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
