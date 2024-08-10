@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://6ja4ysq4ni0v"]
+
+[ext_resource type="Script" path="res://rail.gd" id="1_v28a5"]
+[ext_resource type="Texture2D" uid="uid://dt1k6qld5l837" path="res://duckfling01.png" id="2_6hm0y"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0w8r7"]
+radius = 0.164566
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j7def"]
+size = Vector3(0.1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ynncw"]
+size = Vector3(0.1, 2, 1)
+
+[node name="Rail" type="Node3D"]
+script = ExtResource("1_v28a5")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="model" type="Sprite3D" parent="CharacterBody3D"]
+texture_filter = 0
+texture = ExtResource("2_6hm0y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("SphereShape3D_0w8r7")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.701614)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.353601, -0.0183639, -0.741086)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.623962, -0.0068101, -0.0696077)
+shape = SubResource("BoxShape3D_j7def")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70138, 0, -0.701614)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.623962, -0.0068101, -0.0696077)
+shape = SubResource("BoxShape3D_j7def")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.0269224, 0.067759, -0.701614)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.623962, -0.0068101, -0.0696077)
+shape = SubResource("BoxShape3D_ynncw")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.0269224, 0.993495, -0.701614)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/StaticBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451889, -0.00681011, -0.0696077)
+shape = SubResource("BoxShape3D_ynncw")
