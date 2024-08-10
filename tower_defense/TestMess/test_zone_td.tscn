@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://btemcmsq4327x"]
+[gd_scene load_steps=2 format=3 uid="uid://btemcmsq4327x"]
+
+[ext_resource type="MeshLibrary" uid="uid://d373lx1o251af" path="res://tower_defense/assets/TileMesh/Tiles.tres" id="1_lcsg5"]
 
 [node name="TestZone" type="GridMap"]
+mesh_library = ExtResource("1_lcsg5")
+data = {
+"cells": PackedInt32Array(1, 65533, 41, 1, 65535, 3, 1, 0, 3, 0, 0, 3, 0, 65535, 3, 65535, 65535, 3)
+}
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.963059, 0.26929, 0, -0.26929, 0.963059, 0, 2.60478, 3.87861)
