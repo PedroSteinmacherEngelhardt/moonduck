@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt1k6qld5l837"
-path.s3tc="res://.godot/imported/duckfling01.png-2529412d6cc2dbb3d53f3750623e6595.s3tc.ctex"
+path.s3tc="res://.godot/imported/duckfling01.png-3a0531cb0dc9a33dd1956b484679d802.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://duckfling01.png"
-dest_files=["res://.godot/imported/duckfling01.png-2529412d6cc2dbb3d53f3750623e6595.s3tc.ctex"]
+source_file="res://flying_duck/duckfling01.png"
+dest_files=["res://.godot/imported/duckfling01.png-3a0531cb0dc9a33dd1956b484679d802.s3tc.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cdmo7ruaw50aa"]
 
-[ext_resource type="PackedScene" uid="uid://6ja4ysq4ni0v" path="res://rail.tscn" id="1_53hen"]
+[ext_resource type="PackedScene" uid="uid://cgt83upaw7kot" path="res://flying_duck/player.tscn" id="1_53hen"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5vhl"]
 albedo_color = Color(0.223529, 0.478431, 0.133333, 1)
@@ -12,7 +12,7 @@ size = Vector2(2000, 10000)
 [sub_resource type="BoxMesh" id="BoxMesh_llpra"]
 size = Vector3(1, 2, 1)
 
-[node name="fligth_test" type="Node3D"]
+[node name="player" type="Node3D"]
 
 [node name="player" parent="." instance=ExtResource("1_53hen")]
 

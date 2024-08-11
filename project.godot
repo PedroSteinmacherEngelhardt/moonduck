@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="flight test"
-run/main_scene="res://fligth_test.tscn"
+run/main_scene="res://flying_duck/fligth_test.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -65,3 +65,5 @@ roll_right={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
