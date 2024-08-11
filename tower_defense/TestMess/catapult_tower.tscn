@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://dyplavtc6d883"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f1ld4"]
-size = Vector3(1, 1.5, 1)
+size = Vector3(1, 1.71344, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8khq"]
 resource_name = "stone"
@@ -368,33 +368,34 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_oltvv")
 
 [node name="CatapultTower" type="StaticBody3D"]
-metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.42543, 0)
 shape = SubResource("BoxShape3D_f1ld4")
 
 [node name="towerSquare_topA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.5, 0)
 mesh = SubResource("ArrayMesh_qr3d8")
 skeleton = NodePath("")
 
 [node name="towerSquare_middleA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.25, 0)
 mesh = SubResource("ArrayMesh_4y0g7")
 skeleton = NodePath("")
 
 [node name="towerSquare_bottomB" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("ArrayMesh_kkltg")
 skeleton = NodePath("")
 
 [node name="weapon_catapult" type="MeshInstance3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.30722, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
 mesh = SubResource("ArrayMesh_21ngn")
 skeleton = NodePath("")
 
 [node name="catapult" type="MeshInstance3D" parent="weapon_catapult"]
-transform = Transform3D(0.5, 0, 0, 0, 0.482963, 0.129409, 0, -0.129409, 0.482963, 0.016208, 0.105768, 0.0457565)
+transform = Transform3D(0.5, 0, 0, 0, 0.482963, 0.129409, 0, -0.129409, 0.482963, 0.015, 0.106268, 0.05268)
 mesh = SubResource("ArrayMesh_aqill")
 skeleton = NodePath("")
