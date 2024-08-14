@@ -17,7 +17,6 @@ script = ExtResource("3_d87ix")
 pivot = NodePath("../pivot")
 
 [node name="model" type="Sprite3D" parent="."]
-billboard = 1
 texture_filter = 0
 texture = ExtResource("2_6hm0y")
 

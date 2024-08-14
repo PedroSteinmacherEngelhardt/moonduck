@@ -5,8 +5,7 @@ extends StaticBody3D
 
 
 func _on_input_event(camera, event, position, normal, shape_idx):
+	return
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
-			print(event)
-			print("dor")
 			add_child(catapult_tower.instantiate())

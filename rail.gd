@@ -12,6 +12,7 @@ extends CharacterBody3D
 
 #@onready var prop = $Plane2/Plane/propellor
 @onready var plane_mesh = $model
+@onready var camera : Camera3D = $Camera3D
 
 var turn_input =  Vector2()
 
@@ -19,9 +20,15 @@ func _ready() -> void:
 	pitch_speed = deg_to_rad(pitch_speed)
 	yaw_speed = deg_to_rad(yaw_speed)
 	roll_speed = deg_to_rad(roll_speed)
+	
+	GameState.camera_flying = camera
+	GameState.player = self
 
 
 func _physics_process(delta: float) -> void:
+	if GameState.current_state != GameState.State.flying:
+		return
+	
 	var input = Input.get_vector("left","right","down","up")
 	var roll = Input.get_axis("roll_left","roll_right")
 	if input.y > 0 and current_speed < MAX_SPEED:
@@ -33,8 +40,6 @@ func _physics_process(delta: float) -> void:
 	var turn_dir = Vector3(-turn_input.y,-turn_input.x,-roll)
 	apply_rotation(turn_dir,delta)
 	turn_input = Vector2()
-	#spin_propellor(delta)
-	print(current_speed)
 
 
 func apply_rotation(vector,delta):
