@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx3u3p5xe7ir1"]
+
+[ext_resource type="Script" path="res://tower_defense/TestMess/catapult_tower_placer.gd" id="1_5577f"]
+[ext_resource type="PackedScene" uid="uid://n0mu33a36c1q" path="res://tower_defense/TestMess/catapult_towerMesh.tscn" id="1_j456a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cog2e"]
+size = Vector3(1, 1.479, 1)
+
+[node name="CatapultTowerPlacer" type="Area3D"]
+script = ExtResource("1_5577f")
+
+[node name="CatapultTowerMesh" parent="." instance=ExtResource("1_j456a")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.756917, 0)
+shape = SubResource("BoxShape3D_cog2e")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]

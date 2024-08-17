@@ -5,9 +5,6 @@ extends Control
 var mouse_pos = Vector2()
 signal analog_input(analog:Vector2)
 
-func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CONFINED_HIDDEN
-	Input.warp_mouse(position)
 
 func _process(delta: float) -> void:
 	queue_redraw()

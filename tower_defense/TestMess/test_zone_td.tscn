@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://crxpuscjbqbdg" path="res://tower_defense/TestMess/696.jpg" id="1_6fqft"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/test_zone_td.gd" id="1_yy8nu"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/pivot.gd" id="3_llyn7"]
-[ext_resource type="PackedScene" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
 [ext_resource type="PackedScene" uid="uid://b2roooemf70ia" path="res://rail.tscn" id="5_oncki"]
 [ext_resource type="PackedScene" path="res://tower_defense/TestMess/purple_enemie.tscn" id="6_pm7tv"]
+[ext_resource type="PackedScene" uid="uid://dx3u3p5xe7ir1" path="res://tower_defense/TestMess/catapult_tower_placer.tscn" id="6_px3oh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdbts"]
 albedo_texture = ExtResource("1_6fqft")
@@ -24,9 +24,6 @@ size = Vector3(35, 1, 35)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 2.9758, 80.1626, -0.388929)
 
-[node name="TowerSpot" parent="." instance=ExtResource("3_mc5oo")]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0.704166, 3.3266, -6.63116)
-
 [node name="pivot" type="Node3D" parent="."]
 script = ExtResource("3_llyn7")
 
@@ -37,5 +34,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3206, 18.6529, -15.7532)
 
 [node name="PurpleEnemie" parent="." instance=ExtResource("6_pm7tv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65247, -6.31594, 4.22248)
-target = Vector3(-5, 7, 10)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65247, 9.38609, 4.22248)
+
+[node name="CatapultTowerPlacer" parent="." instance=ExtResource("6_px3oh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 546.0
+offset_right = 599.0
+offset_bottom = 610.0
+text = "buy tower"
+
+[connection signal="button_down" from="Control/Button" to="." method="_on_button_button_down"]
