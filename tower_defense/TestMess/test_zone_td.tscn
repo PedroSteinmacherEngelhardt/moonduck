@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://crxpuscjbqbdg" path="res://tower_defense/TestMess/696.jpg" id="1_6fqft"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/test_zone_td.gd" id="1_yy8nu"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/pivot.gd" id="3_llyn7"]
-[ext_resource type="PackedScene" uid="uid://bppp857a03enn" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
-[ext_resource type="PackedScene" uid="uid://6ja4ysq4ni0v" path="res://rail.tscn" id="5_oncki"]
-[ext_resource type="PackedScene" uid="uid://3eknjwqnok61" path="res://tower_defense/TestMess/purple_enemie.tscn" id="6_pm7tv"]
+[ext_resource type="PackedScene" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
+[ext_resource type="PackedScene" uid="uid://b2roooemf70ia" path="res://rail.tscn" id="5_oncki"]
+[ext_resource type="PackedScene" path="res://tower_defense/TestMess/purple_enemie.tscn" id="6_pm7tv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdbts"]
 albedo_texture = ExtResource("1_6fqft")

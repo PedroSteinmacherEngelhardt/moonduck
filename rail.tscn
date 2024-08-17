@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2roooemf70ia"]
+
+[ext_resource type="Script" path="res://flying_duck/player.gd" id="1_v28a5"]
+[ext_resource type="Texture2D" uid="uid://dt1k6qld5l837" path="res://flying_duck/duckfling01.png" id="2_6hm0y"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="3_d87ix"]
+[ext_resource type="PackedScene" uid="uid://cf7xspa5gbijf" path="res://flying_duck/mouse_analog_input.tscn" id="4_ytj5k"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0w8r7"]
+radius = 0.164566
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_v28a5")
+
+[node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("pivot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.701614)
+script = ExtResource("3_d87ix")
+pivot = NodePath("../pivot")
+
+[node name="model" type="Sprite3D" parent="."]
+texture_filter = 0
+texture = ExtResource("2_6hm0y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_0w8r7")
+
+[node name="pivot" type="Node3D" parent="."]
+
+[node name="mouse_analog_input" parent="." instance=ExtResource("4_ytj5k")]
+
+[connection signal="analog_input" from="mouse_analog_input" to="." method="_on_mouse_analog_input_analog_input"]

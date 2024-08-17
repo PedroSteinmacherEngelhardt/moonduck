@@ -22,4 +22,3 @@ func _input(event):
 		pivot.rotation.x -= event.relative.y / mouseSensitivity
 		#pivot.rotation.x = clamp(pivot.rotation.x, deg_to_rad(-70), deg_to_rad(50))
 		pivot.rotation.y += -event.relative.x / mouseSensitivity
-
