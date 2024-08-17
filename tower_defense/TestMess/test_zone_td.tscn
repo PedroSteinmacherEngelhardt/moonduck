@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://btemcmsq4327x"]
+[gd_scene load_steps=8 format=3 uid="uid://btemcmsq4327x"]
 
 [ext_resource type="Texture2D" uid="uid://crxpuscjbqbdg" path="res://tower_defense/TestMess/696.jpg" id="1_6fqft"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/test_zone_td.gd" id="1_yy8nu"]
 [ext_resource type="Script" path="res://tower_defense/TestMess/pivot.gd" id="3_llyn7"]
 [ext_resource type="PackedScene" uid="uid://bppp857a03enn" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
 [ext_resource type="PackedScene" uid="uid://6ja4ysq4ni0v" path="res://rail.tscn" id="5_oncki"]
+[ext_resource type="PackedScene" uid="uid://3eknjwqnok61" path="res://tower_defense/TestMess/purple_enemie.tscn" id="6_pm7tv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdbts"]
 albedo_texture = ExtResource("1_6fqft")
@@ -34,3 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("5_oncki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3206, 18.6529, -15.7532)
+
+[node name="PurpleEnemie" parent="." instance=ExtResource("6_pm7tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65247, -6.31594, 4.22248)
+target = Vector3(-5, 7, 10)
