@@ -10,6 +10,10 @@ func _ready() -> void:
 	Input.warp_mouse(position)
 
 func _process(delta: float) -> void:
+	queue_redraw()
+	if GameState.current_state != GameState.State.flying:
+		return
+	
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if Input.mouse_mode == Input.MOUSE_MODE_VISIBLE:
@@ -30,6 +34,9 @@ func _process(delta: float) -> void:
 	queue_redraw()
 	
 func _draw() -> void:
+	if GameState.current_state != GameState.State.flying:
+		return
+	
 	draw_arc(Vector2(0,0),RADIUS,0,360,40,Color.WHITE,5,true)
 	draw_circle(Vector2(0,0),DEAD_ZONE*100,Color.RED)
 	draw_circle(mouse_pos,10,Color.WHITE)

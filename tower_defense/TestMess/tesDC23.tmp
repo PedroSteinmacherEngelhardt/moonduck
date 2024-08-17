@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://btemcmsq4327x"]
+
+[ext_resource type="Texture2D" uid="uid://crxpuscjbqbdg" path="res://tower_defense/TestMess/696.jpg" id="1_6fqft"]
+[ext_resource type="Script" path="res://tower_defense/TestMess/CharacterBody3D.gd" id="1_mf7nb"]
+[ext_resource type="PackedScene" uid="uid://bppp857a03enn" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dhc2u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdbts"]
+albedo_texture = ExtResource("1_6fqft")
+uv1_scale = Vector3(8, 8, 8)
+uv1_triplanar = true
+
+[node name="TestZone" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0105546, -1.19209e-07, -0.0420141)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 5.81321)
+script = ExtResource("1_mf7nb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("SphereShape3D_dhc2u")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_qdbts")
+use_collision = true
+size = Vector3(35, 1, 35)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 2.9758, 34.223, -0.388929)
+
+[node name="TowerSpot" parent="." instance=ExtResource("3_mc5oo")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0.704166, 3.3266, -6.63116)

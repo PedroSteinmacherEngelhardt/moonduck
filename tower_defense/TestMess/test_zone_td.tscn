@@ -1,12 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://btemcmsq4327x"]
+[gd_scene load_steps=8 format=3 uid="uid://btemcmsq4327x"]
 
-[ext_resource type="MeshLibrary" uid="uid://d373lx1o251af" path="res://tower_defense/assets/TileMesh/Tiles.tres" id="1_lcsg5"]
+[ext_resource type="Texture2D" uid="uid://crxpuscjbqbdg" path="res://tower_defense/TestMess/696.jpg" id="1_6fqft"]
+[ext_resource type="Script" path="res://tower_defense/TestMess/test_zone_td.gd" id="1_yy8nu"]
+[ext_resource type="Script" path="res://tower_defense/TestMess/pivot.gd" id="3_llyn7"]
+[ext_resource type="PackedScene" uid="uid://bppp857a03enn" path="res://tower_defense/TestMess/tower_spot.tscn" id="3_mc5oo"]
+[ext_resource type="PackedScene" uid="uid://6ja4ysq4ni0v" path="res://rail.tscn" id="5_oncki"]
+[ext_resource type="PackedScene" uid="uid://3eknjwqnok61" path="res://tower_defense/TestMess/purple_enemie.tscn" id="6_pm7tv"]
 
-[node name="TestZone" type="GridMap"]
-mesh_library = ExtResource("1_lcsg5")
-data = {
-"cells": PackedInt32Array(1, 65533, 41, 1, 65535, 3, 1, 0, 3, 0, 0, 3, 0, 65535, 3, 65535, 65535, 3)
-}
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdbts"]
+albedo_texture = ExtResource("1_6fqft")
+uv1_scale = Vector3(8, 8, 8)
+uv1_triplanar = true
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.963059, 0.26929, 0, -0.26929, 0.963059, 0, 2.60478, 3.87861)
+[node name="TestZone" type="Node3D"]
+script = ExtResource("1_yy8nu")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_qdbts")
+use_collision = true
+collision_layer = 3
+size = Vector3(35, 1, 35)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 2.9758, 80.1626, -0.388929)
+
+[node name="TowerSpot" parent="." instance=ExtResource("3_mc5oo")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0.704166, 3.3266, -6.63116)
+
+[node name="pivot" type="Node3D" parent="."]
+script = ExtResource("3_llyn7")
+
+[node name="Camera3D" type="Camera3D" parent="pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("5_oncki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3206, 18.6529, -15.7532)
+
+[node name="PurpleEnemie" parent="." instance=ExtResource("6_pm7tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65247, -6.31594, 4.22248)
+target = Vector3(-5, 7, 10)
